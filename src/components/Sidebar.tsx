@@ -6,7 +6,7 @@
  * and organized menu sections for different application areas.
  */
 
-import { Building2, PanelLeft  , Briefcase, Users, Box, Puzzle, Play, BarChart3, UserCircle2, Search } from 'lucide-react';
+import { Building2, PanelLeft  , Briefcase, Users, Box, Puzzle, Play, BarChart3, UserCircle2, ChevronsUpDown } from 'lucide-react';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 
@@ -55,11 +55,14 @@ export function Sidebar() {
       {/* Header section with logo and brand name */}
       <div className="p-4 flex items-center gap-2 ">
         {/* Application logo */}
-        <div className="w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center">
+        <div className="w-8 h-8 bg-yellow-500 rounded-3xl flex items-center justify-center">
           <span className="text-black font-bold text-sm">P</span>
         </div>
         {/* Brand name */}
         <span className="text-white font-semibold">Planos</span>
+        <Button>
+        <ChevronsUpDown size={15}/>
+        </Button>
         {/* Dropdown arrow button */}
         <Button className="ml-auto text-gray-400 hover:text-white">
           <svg width="22" height="22" viewBox="0 0 16 16" fill="none">
